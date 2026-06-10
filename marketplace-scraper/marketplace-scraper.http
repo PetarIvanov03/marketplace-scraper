@@ -1,0 +1,6 @@
+@marketplace_scraper_HostAddress = http://localhost:5210
+
+GET {{marketplace_scraper_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
