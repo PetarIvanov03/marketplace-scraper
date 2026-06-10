@@ -174,8 +174,9 @@ GET  /api/scrape/status             -- последните N ScrapeRun запи
 
 ## Local dev setup
 ```bash
-# 1. Инсталирай Playwright браузъри (веднъж)
-pwsh playwright.ps1 install chromium
+# 1. Build first (generates playwright.ps1), then install Playwright browsers (once)
+dotnet build
+pwsh bin/Debug/net9.0/playwright.ps1 install chromium
 
 # 2. Migrations
 dotnet ef migrations add InitialCreate
